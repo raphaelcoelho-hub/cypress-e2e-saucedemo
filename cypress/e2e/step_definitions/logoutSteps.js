@@ -1,4 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import logoutPage from "../pages/logoutPage";
 
 Given("que eu acesse a página de login do SauceDemo", () => {
   cy.visit("https://www.saucedemo.com");
@@ -15,13 +16,13 @@ Then("eu devo ser redirecionado para a página de produtos", () => {
 });
 
 When("eu clicar no menu hambúrguer", () => {
-  cy.get("#react-burger-menu-btn").click();
+  logoutPage.clicarMenuHamburguer();
 });
 
 When("clicar na opção {string}", (opcao) => {
-  cy.get("#logout_sidebar_link").click();
+  logoutPage.clicarOpcaoLogout();
 });
 
 Then("eu devo ser encerrado e redirecionado para a tela de login", () => {
-  cy.url().should("eq", "https://www.saucedemo.com/");
+  logoutPage.validarRedirecionamentoLogin();
 });
