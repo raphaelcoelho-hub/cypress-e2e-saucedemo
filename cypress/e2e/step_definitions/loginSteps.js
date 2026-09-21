@@ -31,7 +31,7 @@ When("preencho o campo de usuario com espaço no meio do nome {string}", (usuari
   LoginPage.fillUsername(usuario);
 });
 
-// --- Ações de Preenchimento de senha ---
+// --- Ações de Preenchimento da senha ---
 When("preencho o campo de senha com {string}", (senha) => {
   LoginPage.fillPassword(senha);
 });
