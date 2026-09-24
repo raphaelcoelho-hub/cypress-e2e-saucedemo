@@ -31,9 +31,7 @@ When("clicar na opção {string}", (opcao) => {
   }
 });
 
-Then("eu devo permanecer na página de catálogo de produtos", () => {
-  cy.url().should("include", "/inventory.html");
-});
+git checkout feature/KAN-81-menu-navegacao
 
 Then("eu devo ser redirecionado para o site externo da Sauce Labs", () => {
   cy.origin("https://saucelabs.com", () => {
