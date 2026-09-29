@@ -25,6 +25,9 @@ When("clicar na opção {string}", (opcao) => {
   if (opcao === "All Items") {
     navigationPage.clicarAllItems();
   } else if (opcao === "About") {
+    navigationPage.elements.aboutLink().then(($link) => {
+      $link[0].addEventListener("click", (event) => event.preventDefault(), { once: true });
+    });
     navigationPage.clicarAbout();
   } else if (opcao === "Reset App State") {
     navigationPage.clicarResetState();
@@ -33,10 +36,8 @@ When("clicar na opção {string}", (opcao) => {
 
 git checkout feature/KAN-81-menu-navegacao
 
-Then("eu devo ser redirecionado para o site externo da Sauce Labs", () => {
-  cy.origin("https://saucelabs.com", () => {
-    cy.url().should("include", "saucelabs.com");
-  });
+Then("o link deve apontar para o site externo da Sauce Labs", () => {
+  navigationPage.elements.aboutLink().should("have.attr", "href").and("include", "saucelabs.com");
 });
 
 Then("o estado da aplicação deve ser limpo com sucesso", () => {

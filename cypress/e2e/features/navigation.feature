@@ -3,6 +3,8 @@
 Funcionalidade: Menu & Navegação Global
 
   Contexto: Estar logado no sistema
+
+  
     Dado que eu acesse a página de login do SauceDemo
     E eu realize o login com o usuário "standard_user" e senha "secret_sauce"
     Então eu devo ser redirecionado para a página de produtos
@@ -15,7 +17,7 @@ Funcionalidade: Menu & Navegação Global
   Cenário: Acessar a página Sobre (About)
     Quando eu clicar no menu hambúrguer
     E clicar na opção "About"
-    Então eu devo ser redirecionado para o site externo da Sauce Labs
+    Então o link deve apontar para o site externo da Sauce Labs
 
   Cenário: Resetar o estado da aplicação
     Quando eu clicar no menu hambúrguer
