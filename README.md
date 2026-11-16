@@ -43,34 +43,34 @@ Os testes estão modularizados por domínio funcional da aplicação[cite: 1]:
 cypress-saucedemo/
 ├── cypress/
 │   ├── e2e/
-│   │   ├── features/               # Especificações BDD em Gherkin (.feature)[cite: 1]
+│   │   ├── features/               # Especificações BDD em Gherkin (.feature)
 │   │   │   ├── cart.feature
 │   │   │   ├── checkout.feature
 │   │   │   ├── login.feature
 │   │   │   ├── logout.feature
 │   │   │   └── navigation.feature
-│   │   └── step_definitions/       # Implementação técnica dos passos BDD[cite: 1]
+│   │   └── step_definitions/       # Implementação técnica dos passos BDD
 │   │       ├── cartSteps.js
 │   │       ├── checkoutSteps.js
 │   │       ├── loginSteps.js
 │   │       ├── logoutSteps.js
 │   │       └── navigationSteps.js
-│   ├── fixtures/                   # Massas de dados estáticas (JSON)[cite: 1]
+│   ├── fixtures/                   # Massas de dados estáticas (JSON)
 │   │   └── example.json
 │   └── support/
-│       ├── pages/                  # Page Objects (mapeamento de seletores e ações)[cite: 1, 2]
+│       ├── pages/                  # Page Objects (mapeamento de seletores e ações)
 │       │   ├── CartPage.js
 │       │   ├── CheckoutPage.js
 │       │   ├── LoginPage.js
 │       │   ├── LogoutPage.js
 │       │   └── NavigationPage.js
-│       ├── commands.js             # Comandos customizados e reutilizáveis do Cypress[cite: 2]
-│       └── e2e.js                  # Configurações globais e hooks de execução[cite: 2]
-├── .gitignore                      # Arquivos e pastas ignorados no versionamento[cite: 2]
-├── cypress.config.js               # Configurações do Cypress e preprocessor do Cucumber[cite: 2]
-├── package.json                    # Dependências e scripts do projeto[cite: 2]
-├── package-lock.json               # Controle de versão exata das dependências[cite: 2]
-└── README.md                       # Documentação do projeto[cite: 2]
+│       ├── commands.js             # Comandos customizados e reutilizáveis do Cypress
+│       └── e2e.js                  # Configurações globais e hooks de execução
+├── .gitignore                      # Arquivos e pastas ignorados no versionamento
+├── cypress.config.js               # Configurações do Cypress e preprocessor do Cucumber
+├── package.json                    # Dependências e scripts do projeto
+├── package-lock.json               # Controle de versão exata das dependências
+└── README.md                       # Documentação do projeto
 
 ---
 
