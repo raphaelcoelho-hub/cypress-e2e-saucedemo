@@ -18,21 +18,21 @@ Este projeto é desenvolvido de forma colaborativa, aplicando boas práticas de 
 
 ## 🎯 Escopo e Status dos Cenários
 
-Os testes estão modularizados por domínio funcional da aplicação[cite: 1]:
+Os testes estão modularizados por domínio funcional da aplicação:
 
 ### ✅ Concluídos (Mergeados na `main`)
-*   **🔐 Autenticação (`login.feature`)**[cite: 1]
+*   **🔐 Autenticação (`login.feature`)**
     *   Login com credenciais válidas e redirecionamento para o catálogo.
     *   Validação de mensagens de erro para usuário bloqueado (`locked_out_user`), credenciais inválidas e campos obrigatórios.
-*   **🚪 Encerramento de Sessão (`logout.feature`)**[cite: 1]
+*   **🚪 Encerramento de Sessão (`logout.feature`)**
     *   Logout seguro através do menu lateral e validação de bloqueio de acesso a rotas protegidas sem autenticação.
-*   **🧭 Navegação e Catálogo (`navigation.feature`)**[cite: 1]
+*   **🧭 Navegação e Catálogo (`navigation.feature`)**
     *   Interação com o menu lateral, visualização de detalhes dos produtos e ordenação/filtragem na vitrine.
 
 ### 🚧 Em Desenvolvimento (Roadmap)
-*   **🛍️ Carrinho de Compras (`cart.feature`)**[cite: 1]
+*   **🛍️ Carrinho de Compras (`cart.feature`)**
     *   Adição e remoção de produtos (vitrine e carrinho), validação de persistência e contador de itens.
-*   **💳 Fluxo de Checkout (`checkout.feature`)**[cite: 1]
+*   **💳 Fluxo de Checkout (`checkout.feature`)**
     *   Preenchimento e validação de formulário de entrega, conferência de valores e finalização do pedido.
 
 ---
